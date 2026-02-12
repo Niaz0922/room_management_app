@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+
+
+
+/* If using Flowbite */
+@import "flowbite/src/themes/default";
+
+/* Add your custom utility class */
+@layer utilities {
+  .font-inter-sans {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+.p-datepicker-trigger {
+  background: rgb(79, 70, 229);
+  border: none;
+}
+
+
+span[data-p-disabled="true"] {
+  color: darkgray !important;
+}
+
+
+
+.react-datetime-picker__clear-button {
+  display: none;
+}
+
+.react-datetime-picker {
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+
+.react-datetime-picker__wrapper {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB !important;
+  outline: none;
+  color: rgb(62, 69, 80);
+}
+
+.react-datetime-picker__clock{
+  display: none;
+}
+
+
+
+@media (max-width: 1060px) {
+  #rooms_home {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 660px or less -> 1 column */
+@media (max-width: 660px) {
+  #rooms_home {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .smd\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1020px) {
+  #dashboard_section {
+    width: calc(100% - 256px);
+  }
+
+  #admin_nav {
+    width: calc(100% - 256px);
+
+  }
+
+  .smd640\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 760px) {
+  .smds\:mt-4r {
+    margin-top: 4rem;
+  }
+
+  .smds\:flex-row {
+    flex-direction: row;
+  }
+
+  .smds\:w-40p {
+    width: 40%;
+  }
+}
+
+
+@media (min-width: 760px) {
+  .smex\:block {
+    display: block;
+  }
+
+  .smex\:flex {
+    display: flex;
+  }
+
+  .smex\:hidden {
+    display: none;
+  }
+
+  .smex\:text-60px {
+    font-size: 60px;
+  }
+
+  .smex\:line-height-60px {
+    line-height: 40px;
+  }
+
+}
+
+
+@media (max-width: 410px) {
+  .exsm\:gap-0 {
+    gap: 0px;
+  }
+
+  .exsm\:px-0 {
+    padding-inline: calc(var(--spacing) * 0)
+  }
+
+  .exsm\:text-center {
+    text-align: center;
+  }
+
+  .exsm\:ml-0 {
+    margin-left: 0rem;
+  }
+
+  .exsm\:px-4 {
+    padding-inline: calc(var(--spacing) * 4)
+  }
+
+  .exsm\:dispaly-0 {
+    display: none;
+  }
+
+  .exsm\:items-center {
+    align-items: center;
+  }
+
+  .exsm\:p-0 {
+    padding: calc(var(--spacing) * 0)
+  }
+}
